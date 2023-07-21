@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: min(3vw, 16px);
+}
+
+.top {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 4rem 8rem 6rem;
+  background-image: url("./image/background image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top nav {
+  width: 100%;
+  display: flex;
+  align-items: "stretch";
+  justify-content: space-between;
+}
+.top nav .logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top nav .logo img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: darken;
+}
+.top nav .logo h2 {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: black;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.top nav .menu {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.top .content {
+  width: 50%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.top .content .subhead {
+  color: #fff;
+  line-height: 1.5rem;
+}
+.top .content h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+}
+.top .content a {
+  color: yellow;
+  font-weight: 900;
+}
+
+.logo-decoration {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: absolute;
+  right: 0;
+  margin-top: -3.5rem;
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: "stretch";
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.logo-decoration img {
+  width: 150px;
+  mix-blend-mode: luminosity;
+}
+
+.review {
+  width: 100%;
+  padding: 4rem 8rem 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 1rem;
+}
+.review .left {
+  flex-grow: 1;
+  flex-basis: 500px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+.review .left h1 {
+  width: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.review .left p {
+  width: 75%;
+  line-height: 25px;
+}
+.review .left a {
+  color: grey;
+}
+.review .right {
+  flex-grow: 1;
+  flex-basis: 300px;
+  display: flex;
+  justify-content: center;
+}
+.review .right .comment {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px 25px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.review .right .comment h4 {
+  line-height: 25px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+.review .right .user-profile {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.review .right .user-profile .photo {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.review .right .user-profile .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.promotion {
+  width: 100%;
+  padding: 4rem 8rem 6rem;
+}
+.promotion .project-desc {
+  width: 100%;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.promotion .project-desc .left {
+  width: 30%;
+}
+.promotion .project-desc .left h1 {
+  font-size: 2rem;
+}
+.promotion .project-desc .right {
+  width: 50%;
+}
+.promotion .project-desc .right p {
+  line-height: 1.5rem;
+}
+
+.project-list {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 8rem;
+  margin-bottom: 6rem;
+}
+.project-list .image-field {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.project-list .image-field img {
+  width: 100%;
+  height: 100%;
+}
+.project-list .project-details {
+  width: 50%;
+  height: 400px;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-list .project-details .header {
+  padding-right: 3rem;
+}
+.project-list .project-details .header h2 {
+  font-size: 2rem;
+}
+.project-list .project-details .details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 4rem;
+}
+.project-list .project-details .preview a {
+  color: grey;
+}
+.project-list .feedback {
+  position: absolute;
+  width: min(400px, 30%);
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  font-style: italic;
+  background-color: #fff;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project-list .feedback .review {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+}
+.project-list .feedback .review h3 {
+  font-size: 1rem;
+}
+.project-list .feedback .review .user-profile {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.project-list .feedback .review .user-profile .photo {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.project-list .feedback .review .user-profile .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.project2 {
+  flex-direction: row-reverse;
+  padding-left: 4rem;
+  padding-right: 0;
+}
+.project2 .feedback {
+  left: 65%;
+}
+
+.product-idea {
+  padding: 4rem 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.product-idea .title {
+  width: 50%;
+}
+.product-idea .title h1 {
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+.product-idea .boxes {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.product-idea .boxes .box {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.product-idea .boxes .box .title {
+  width: 100%;
+}
+.product-idea .boxes .box .title h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+.product-idea .boxes .box .preview {
+  margin-top: 1rem;
+}
+.product-idea .boxes .box.box1 {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.floating-div {
+  position: absolute;
+  width: 90%;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: -50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  z-index: 999;
+}
+.floating-div h1 {
+  font-size: 2rem;
+  width: 50%;
+  line-height: 2.5rem;
+}
+.floating-div a {
+  color: yellow;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 8rem 6rem;
+  padding-bottom: 0;
+  padding-top: 15rem;
+  border: 1px solid red;
+  background-color: darkolivegreen;
+  background-image: url(./image/footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .owner-details {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+footer .owner-details label {
+  text-transform: capitalize;
+}
+footer .owner-details h3 {
+  color: white;
+}
+footer .owner-details .phone, footer .owner-details .address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .help-desk {
+  display: flex;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+}
+footer .property {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  width: 65%;
+  border-right: 1px solid grey;
+}
+footer .property .feature {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .property .feature .header {
+  color: white;
+}
+footer .property .feature .header h3 {
+  font-size: 1rem;
+}
+footer .property .feature .desc p {
+  color: rgb(223, 219, 219);
+  line-height: 2rem;
+}
+footer .social-media {
+  width: 40%;
+  padding-left: 3rem;
+  padding-right: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .social-media h3 {
+  color: white;
+}
+footer .social-media p {
+  line-height: 1.5rem;
+  color: rgb(223, 219, 219);
+}
+footer .social-media .media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .social-media .media .logoes {
+  display: flex;
+  gap: 2rem;
+}
+footer .social-media .media .logoes img {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: grey;
+}
+footer .social-media .media .logoes img:nth-child(3) {
+  background-color: yellow;
+}
+footer .bottom-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+footer .bottom-footer .logo {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+footer .bottom-footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .bottom-footer .copyright {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .top {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .logo-decoration img {
+    width: 100px;
+  }
+  .review {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .right {
+    padding: 0;
+  }
+  .comment {
+    width: 100%;
+  }
+  .promotion {
+    padding: 2rem 3rem;
+  }
+  .promotion .project-desc .left {
+    width: 100%;
+  }
+  .promotion .project-desc .right {
+    width: 100%;
+  }
+  .promotion .project-details .comment {
+    width: 90%;
+  }
+  .project-list, .project-list.project2 {
+    padding-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .project-list .image-field, .project-list.project2 .image-field {
+    width: 100%;
+  }
+  .project-list .project-details, .project-list.project2 .project-details {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem 3rem;
+  }
+  .project-list .project-details .details, .project-list.project2 .project-details .details {
+    margin-bottom: 0;
+  }
+  .project-list .feedback, .project-list.project2 .feedback {
+    width: 75%;
+    top: 20%;
+  }
+  .project2 .feedback {
+    left: 5%;
+  }
+  .product-idea {
+    padding: 2rem 3rem 6rem 3rem;
+  }
+  .product-idea .title {
+    width: 100%;
+  }
+  .product-idea .boxes {
+    justify-content: center;
+  }
+  .floating-div {
+    padding: 2rem 3rem;
+  }
+  .floating-div h1 {
+    width: 100%;
+  }
+  footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  footer .owner-details {
+    gap: 2rem;
+  }
+  footer .owner-details .phone, footer .owner-details .address {
+    width: 50%;
+  }
+  footer .help-desk {
+    display: block;
+    justify-content: center;
+  }
+  footer .help-desk .property {
+    width: 100%;
+    border: none;
+  }
+  footer .help-desk .social-media {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */
